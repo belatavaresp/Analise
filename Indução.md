@@ -1,0 +1,1 @@
+Seja $X \subset \mathbb{N} : 1\in X$ e $s(X) \subset X \rightarrow X = \mathbb{N}$.
