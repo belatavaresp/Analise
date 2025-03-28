@@ -3,6 +3,7 @@ No [[Conjunto dos números naturais]] as operações de soma e multiplicação s
 $$
 n+1 = s(n)
 $$
+
 $$
 n+s(m) = s(n+m)
 $$

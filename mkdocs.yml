@@ -1,0 +1,10 @@
+site_name: Notas de Análise - 2025/1
+theme:
+  name: "material"
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js

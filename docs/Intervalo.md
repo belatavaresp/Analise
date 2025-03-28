@@ -5,6 +5,7 @@ x,y \in I, z\in\mathbb{K} : x<z<y \Rightarrow z \in I
 $$
 #### Exemplos:
 Seja $\mathbb{K} = \mathbb{R}$.
+
 1. $\mathbb{N}$ não é um intervalo, basta tomar $x = 1, y=2, z = \frac{1}{2}$.
 2. $A = \{\frac{1}{n}| n\in \mathbb{N}\}$ não é um intervalo, basta tomar $x=\frac{1}{2}, y = 1, z = \frac{2}{3}$.
 Sejam $a,b,\in\mathbb{R}$
