@@ -1,0 +1,946 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Cota%20superior/">
+      
+      
+        <link rel="next" href="../Enumer%C3%A1vel/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>Demonstrações e exemplos - Notas de Análise - 2025/1</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#exemplo-1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Notas de Análise - 2025/1" class="md-header__button md-logo" aria-label="Notas de Análise - 2025/1" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Notas de Análise - 2025/1
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Demonstrações e exemplos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Notas de Análise - 2025/1" class="md-nav__button md-logo" aria-label="Notas de Análise - 2025/1" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Notas de Análise - 2025/1
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    📚 Minhas Notas de Análise
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Adi%C3%A7%C3%A3o%20e%20multiplica%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adição e multiplicação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Conjunto%20dos%20n%C3%BAmeros%20naturais/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conjunto dos números naturais
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Conjunto%20finito/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conjunto finito
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Conjunto%20infinito/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conjunto infinito
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Corpo%20ordenado%20completo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corpo ordenado completo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Corpo%20ordenado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corpo ordenado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Corpo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corpo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cota%20inferior/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cota inferior
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cota%20superior/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cota superior
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Demonstrações e exemplos
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Demonstrações e exemplos
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 1:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 2:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 3:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 4:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 5:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 6:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 7:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 8:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 9:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Enumer%C3%A1vel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enumerável
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Indu%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Indução
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intervalo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intervalo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lei%20do%20corte/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lei do corte
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../N%C3%BAmeros%20Reais/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Números Reais
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Princ%C3%ADpio%20da%20Boa%20Ordena%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Princípio da Boa Ordenação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Rela%C3%A7%C3%A3o%20de%20ordem%20em%20N/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relação de ordem em N
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Supremo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supremo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%C3%8Dnfimo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ínfimo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 1:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 2:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 3:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 4:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 5:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 6:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 7:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 8:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 9:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Demonstrações e exemplos</h1>
+
+<h3 id="exemplo-1">Exemplo 1:</h3>
+<p>Prove que <span class="arithmatex">\(s(n) \neq n \ \ \forall n\in \mathbb{N}\)</span>.</p>
+<p><strong>Prova usando [[Indução]]:</strong>
+- Caso base:  <span class="arithmatex">\(s(1) \neq 1\)</span> pelo [[Conjunto dos números naturais#Axioma 2]]
+- Passo indutivo: assumimos <span class="arithmatex">\(s(n) \neq n\)</span>, como <span class="arithmatex">\(s\)</span> é injetiva temos que <span class="arithmatex">\(s(s(n)) \neq s(n)\)</span>. <span class="arithmatex">\(\Box\)</span> </p>
+<h3 id="exemplo-2">Exemplo 2:</h3>
+<p>Prove que seja <span class="arithmatex">\(n \in \mathbb{N}\)</span> então <span class="arithmatex">\(\nexists p \in \mathbb{N} : n&lt;p&lt;n+1\)</span>.</p>
+<p><strong>Prova usando [[Lei do corte]]:</strong>
+Suponha que exista <span class="arithmatex">\(p\)</span>. Então sabemos que como <span class="arithmatex">\(n&lt;p\)</span> então <span class="arithmatex">\(\exists m \in \mathbb{N}: p = m+n\)</span>. Mas pelo mesmo argumento, como <span class="arithmatex">\(p&lt;n+1\)</span>, <span class="arithmatex">\(\exists q \in \mathbb{N}: n+1 = p+q\)</span>. Assim temos então que <span class="arithmatex">\(n+1 = m+n+q\)</span>, mas então pela [[Lei do corte]], <span class="arithmatex">\(1 = m+q\)</span> o que é absurdo pois 1 não é sucessor de nenhum natural pelo [[Conjunto dos números naturais#Axioma 1]]. <span class="arithmatex">\(\Box\)</span> </p>
+<h3 id="exemplo-3">Exemplo 3:</h3>
+<p>Prove que, sendo <span class="arithmatex">\(X\)</span> um conjunto, se existe <span class="arithmatex">\(\phi_1: I_n \rightarrow X\)</span> e <span class="arithmatex">\(\phi_2: I_m \rightarrow X\)</span> bijeções, então <span class="arithmatex">\(n=m\)</span>.</p>
+<p><strong>Prova:</strong>
+Suponha <span class="arithmatex">\(m&lt;n\)</span>. <span class="arithmatex">\(I_m \rightarrow X \rightarrow I_n \Rightarrow \phi_2 \circ \phi_1^{-1}\)</span> é uma bijeção, que é uma contradição com o [[Conjunto finito#Teorema 1]]. <span class="arithmatex">\(\Box\)</span> </p>
+<h3 id="exemplo-4">Exemplo 4:</h3>
+<p>Prove que <span class="arithmatex">\(\mathbb{Q}\)</span> é enumerável.</p>
+<p><strong>Prova:</strong>
+Defina <span class="arithmatex">\(\phi: \mathbb{Z} \times \mathbb{Z}^* \rightarrow \mathbb{Q}\)</span> tal que <span class="arithmatex">\(\phi(p,q) = \frac{p}{q}\)</span> então, pelo [[Enumerável#Corolário 4]], temos uma função sobrejetiva entre um conjunto enumerável e <span class="arithmatex">\(\mathbb{Q}\)</span>, logo, pelo [[Enumerável#Corolário 3]] ele também é um conjunto enumerável. <span class="arithmatex">\(\Box\)</span> </p>
+<h3 id="exemplo-5">Exemplo 5:</h3>
+<p>O conjunto <span class="arithmatex">\(X = \{ \text{ sequências com entradas 0 ou 1}\} = \{1,0\}^{\mathbb{N}}\)</span> não é enumerável.</p>
+<p><strong>Prova:</strong>
+Diagonalização de Cantor.
+Supomos pelo absurdo que <span class="arithmatex">\(X\)</span> é enumerável. Seja <span class="arithmatex">\(f: \mathbb{N} \rightarrow X\)</span> bijeção, denotamos <span class="arithmatex">\(s_n = f(n)\)</span>.
+Seja <span class="arithmatex">\(s_n = (s_{n1}, s_{n2}, ..., s_{nj}, ...)\)</span> e assim em diante, é sempre possível criar um elemento <span class="arithmatex">\(s* = (1- s_{11}, ..., 1-s_{nn}, ...)\)</span> tal que <span class="arithmatex">\(s* \in X: s* \neq s_i \ \forall i\)</span> e portanto não está contemplado pela enumeração <span class="arithmatex">\(f\)</span>, absurdo. <span class="arithmatex">\(\Box\)</span> </p>
+<h3 id="exemplo-6">Exemplo 6:</h3>
+<p><span class="arithmatex">\(card(\mathbb{N}) &lt; card(P(\mathbb{N}))\)</span> </p>
+<p><strong>Prova:</strong>
+Vamos criar uma bijeção entre <span class="arithmatex">\(P(\mathbb{N})\)</span> e <span class="arithmatex">\(X = \{0,1\}^{\mathbb{N}}\)</span>. Para cada elemento de <span class="arithmatex">\(\mathbb{N}\)</span> vamos associar <span class="arithmatex">\(1\)</span> caso ele pertença à um subconjunto de <span class="arithmatex">\(P(\mathbb{N})\)</span> ou <span class="arithmatex">\(0\)</span> caso contrário. Note que isso evidencia que <span class="arithmatex">\(P(\mathbb{N}) = X\)</span> e pelo [[Demonstrações e exemplos#Exemplo 5]] ele é não enumerável, portanto pelo  [[Enumerável#Teorema 1]] <span class="arithmatex">\(card(\mathbb{N}) &lt; card(P(\mathbb{N}))\)</span>. <span class="arithmatex">\(\Box\)</span>    </p>
+<h3 id="exemplo-7">Exemplo 7:</h3>
+<p><span class="arithmatex">\(\mathbb{R}\)</span> é não enumerável.</p>
+<p><strong>Prova:</strong>
+Basta escrever os reais em <span class="arithmatex">\([0,1]\)</span> como <span class="arithmatex">\(z \in [0,1]: z = 0, d_1 d_2...d_j... \ e \ d_j \in\{0,1\}\)</span>, ou seja, em base <span class="arithmatex">\(2\)</span>, e assim ele é análogo ao conjunto <span class="arithmatex">\(X = \{0,1\}^{\mathbb{N}}\)</span> que pelo [[Demonstrações e exemplos#Exemplo 5]] é não enumerável. </p>
+<h3 id="exemplo-8">Exemplo 8:</h3>
+<p>Demonstração de [[Corpo ordenado#Propriedades]] <strong>O2</strong>.</p>
+<p><strong>Prova:</strong>
+Sejam <span class="arithmatex">\(x,y \in \mathbb{K}\)</span>, consideramos <span class="arithmatex">\(z = y-x\)</span>.
+1. <span class="arithmatex">\(z \in \mathbb{K}^+\iff x&lt;y\)</span>
+2. <span class="arithmatex">\(z = 0 \Rightarrow x = y\)</span>
+3. <span class="arithmatex">\(-z \in \mathbb{K}^+ \Rightarrow x-y \in \mathbb{K}^+ \iff x&gt;y\)</span> </p>
+<h3 id="exemplo-9">Exemplo 9:</h3>
+<p>Seja <span class="arithmatex">\(X \subseteq \mathbb{K}\)</span> onde <span class="arithmatex">\(\mathbb{K}\)</span> é um [[Corpo ordenado]] definido como <span class="arithmatex">\(X = \{r \in \mathbb{Q}, r&gt;0 \ | \ r^2 &lt;2\}\)</span>.
+1. 0 é [[Cota inferior]]
+2. 1000 é [[Cota superior]]
+3. <span class="arithmatex">\(X\)</span> é limitado.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
