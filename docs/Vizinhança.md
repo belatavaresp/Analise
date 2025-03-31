@@ -1,0 +1,1 @@
+Dada uma [[Sequência]] $(x_n)$ e um elemento $a\in(x_n)$, se $\epsilon \in \mathbb{R}:\epsilon>0$ é o *maior erro permitido ao redor de $a$*, definimos a vizinhança de $a$ com raio $\epsilon$, $V_{\epsilon}(a)$, pelo [[Intervalo]] $(a-\epsilon, a+\epsilon)$.

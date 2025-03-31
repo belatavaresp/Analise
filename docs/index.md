@@ -28,6 +28,14 @@ Abaixo estão os tópicos das minhas notas organizadas por capítulo do livro **
 - Corpo ordenado completo
 - Números reais
 
+### **Sequências**
+- Sequência
+- Sequência limitada
+- Desigualdade de Bernoulli (apêndice)
+- Subsequência
+- Vizinhança
+- Limite (sequência)
+
 ### **Demonstrações e exemplos**
 A nota *Demonstrações e exemplos* contém exemplos e exercícios feitos durante a aula com relação à diversos tópicos já abordados nas notas.
 

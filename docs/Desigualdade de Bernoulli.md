@@ -1,0 +1,1 @@
+Seja $x\in \mathbb{R}:x\geq-1 \Rightarrow (1+x)^n \geq 1+nx \ \forall n\in \mathbb{N}$.
