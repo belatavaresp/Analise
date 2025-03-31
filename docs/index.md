@@ -26,6 +26,7 @@ Abaixo estão os tópicos das minhas notas organizadas por capítulo do livro **
 - Supremo
 - Intervalo
 - Corpo ordenado completo
+- Teorema dos intervalos encaixados
 - Números reais
 
 ### **Sequências**
@@ -35,6 +36,8 @@ Abaixo estão os tópicos das minhas notas organizadas por capítulo do livro **
 - Subsequência
 - Vizinhança
 - Limite (sequência)
+- Sequência monótona
+- Teorema de Bolzano-Weierstrass
 
 ### **Demonstrações e exemplos**
 A nota *Demonstrações e exemplos* contém exemplos e exercícios feitos durante a aula com relação à diversos tópicos já abordados nas notas.
