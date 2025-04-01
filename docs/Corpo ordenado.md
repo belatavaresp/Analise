@@ -24,13 +24,13 @@ $$
 2. $x\leq y \iff$ ou $x<y$ ou $x=y$
 3. $x\leq y \iff y\geq x$
 #### Propriedades:
-**O1:** (Transitiva) $x < y$ e $y<z \Rightarrow x<z$
-**O2:** (Tricotomia) Dados $x,y,z \in \mathbb{K}$, temos **exatamente** uma das alternativas abaixo:
+- **O1:** (Transitiva) $x < y$ e $y<z \Rightarrow x<z$
+- **O2:** (Tricotomia) Dados $x,y,z \in \mathbb{K}$, temos **exatamente** uma das alternativas abaixo:
 	1. ou $x<y$
 	2. ou $x=y$
 	3. ou $x > y$
-**C1:** $x<y \Rightarrow x+z < y+z$
-**C2:** $x<y, z>0 \Rightarrow xz<yz$
+- **C1:** $x<y \Rightarrow x+z < y+z$
+- **C2:** $x<y, z>0 \Rightarrow xz<yz$
 ###### OBS:
 - **O1** e **O2**: $<$ é uma relação de ordem total
 - **C1** + **C2**: compatibilidade de $<$ com $+$ e $\cdot$
