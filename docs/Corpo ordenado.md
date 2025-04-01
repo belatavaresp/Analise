@@ -1,5 +1,6 @@
 ### Definição
 Seja $\mathbb{K}$ um [[Corpo]] com um subconjunto $\mathbb{K}^+ \subseteq \mathbb{K}$ tal que:
+
 1. $x,y\in \mathbb{K}^+ \Rightarrow xy, x+y \in \mathbb{K}^+$
 2. $x \in \mathbb{K} \Rightarrow$ Ocorre **exatamente** uma das três alternativas a seguir:
 	1. $x \in \mathbb{K}^+$
