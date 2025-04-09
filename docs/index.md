@@ -35,9 +35,10 @@ Abaixo estão os tópicos das minhas notas organizadas por capítulo do livro **
 - Desigualdade de Bernoulli (apêndice)
 - Subsequência
 - Vizinhança
-- Limite (sequência)
+- Limite
 - Sequência monótona
 - Teorema de Bolzano-Weierstrass
+- Teorema do sanduíche
 
 ### **Demonstrações e exemplos**
 A nota *Demonstrações e exemplos* contém exemplos e exercícios feitos durante a aula com relação à diversos tópicos já abordados nas notas.
