@@ -117,3 +117,17 @@ Seja $x_n$ a sequência do [[Demonstrações e exemplos#Exemplo 14]], sabemos qu
 Por fim temos que se $k$ é fixo e $n\geq k \Rightarrow a_n \geq 1+1+...+\frac{1}{k!}(1-\frac{1}{k})(1-\frac{2}{k})...(1-\frac{k-1}{n})$ então $lim \ a_n = l\geq 1+1+\frac{1}{2!}+...+\frac{1}{k!} = x_k$ (limite do lado direito da desigualdade) mas então como $a_n\leq x_n < e$ temos que $l\leq e$ e $e\leq l \Rightarrow l=e$.
 **OBS:**
 Note que não podemos usar o fato de que o limite interno é 1 pois isso implicaria que $x_n \to 1 \neq e$.
+
+---
+### Exemplo 16:
+Mostre a convergência de $\sum \frac{1}{n^r}, r\in\mathbb{R}$ para os valores possíveis de $r$.
+
+**Prova:**
+1. $r<1$, nesse caso $n^r<n \Rightarrow \frac{1}{n^r}>\frac{1}{n}$, mas $\sum \frac{1}{n} = +\infty$ então pelo [[Teorema do critério da comparação]] a série diverge.
+2. $r>1$, nesse caso, $(s_n)$ é crescente, logo $s_n$ converge $\iff \ \exists (s_{n_k})_k$ convergente. Vamos escolher $n_k = 2^k-1$, ou seja $s_{2^k-1} = 1+ \left(\frac{1}{2^r} + \frac{1}{3^r}\right) + \left(\frac{1}{4^r} + \frac{1}{5^r} + \frac{1}{6^r} + \frac{1}{7^r}\right) + \dots + \left(\frac{1}{(2^{k-1})^r} + \dots + \frac{1}{(2^k - 1)^r} \right) \leq 1+\frac{1}{2^{r-1}} + ... + \frac{1}{(2^{r-1})^{k-1}}$ como $0 < a = \frac{1}{2^{r-1}} < 1$ pois $r>1$ então existe $M>0$ tal que $s_{{2^k} - 1} \leq M$ pois ela é uma versão da série geométrica. Logo $(s_n)$ converge quando $r>1$. 
+3. $r=0$, então $\sum \frac{1}{n^r} = \sum 1$ que sabemos que diverge.
+
+**OBS:**
+Essa série é conhecida como *Zeta de Riemann* e é muito estudada atualmente, e pode ser utilizada para encontrar a convergência de outras séries a partir do [[Teorema do critério da comparação]].
+
+---

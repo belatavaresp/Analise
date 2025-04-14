@@ -39,6 +39,12 @@ Abaixo estão os tópicos das minhas notas organizadas por capítulo do livro **
 - Sequência monótona
 - Teorema de Bolzano-Weierstrass
 - Teorema do sanduíche
+- Limite infinito
+
+### **Séries** 
+- Série numérica
+- Teorema do critério da comparação
+- Teorema de Seibniz
 
 ### **Demonstrações e exemplos**
 A nota *Demonstrações e exemplos* contém exemplos e exercícios feitos durante a aula com relação à diversos tópicos já abordados nas notas.
