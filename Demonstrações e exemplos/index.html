@@ -579,6 +579,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#exemplo-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 16:
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -620,6 +629,27 @@
   
   <span class="md-ellipsis">
     Enumerável
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Indetermina%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Indeterminação
     
   </span>
   
@@ -683,6 +713,27 @@
   
   <span class="md-ellipsis">
     Lei do corte
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Limite%20infinito/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Limite infinito
     
   </span>
   
@@ -888,11 +939,74 @@
   
   
     <li class="md-nav__item">
+      <a href="../S%C3%A9rie%20num%C3%A9rica/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Série numérica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Teorema%20de%20Bolzano%20Weierstrass/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Teorema de Bolzano Weierstrass
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teorema%20de%20Leibniz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teorema de Leibniz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Teorema%20do%20crit%C3%A9rio%20da%20compara%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teorema do critério da comparação
     
   </span>
   
@@ -1145,6 +1259,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#exemplo-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo 16:
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1253,6 +1376,16 @@ Seja <span class="arithmatex">\(x_n\)</span> a sequência do [[Demonstrações e
 Por fim temos que se <span class="arithmatex">\(k\)</span> é fixo e <span class="arithmatex">\(n\geq k \Rightarrow a_n \geq 1+1+...+\frac{1}{k!}(1-\frac{1}{k})(1-\frac{2}{k})...(1-\frac{k-1}{n})\)</span> então <span class="arithmatex">\(lim \ a_n = l\geq 1+1+\frac{1}{2!}+...+\frac{1}{k!} = x_k\)</span> (limite do lado direito da desigualdade) mas então como <span class="arithmatex">\(a_n\leq x_n &lt; e\)</span> temos que <span class="arithmatex">\(l\leq e\)</span> e <span class="arithmatex">\(e\leq l \Rightarrow l=e\)</span>.
 <strong>OBS:</strong>
 Note que não podemos usar o fato de que o limite interno é 1 pois isso implicaria que <span class="arithmatex">\(x_n \to 1 \neq e\)</span>.</p>
+<hr />
+<h3 id="exemplo-16">Exemplo 16:</h3>
+<p>Mostre a convergência de <span class="arithmatex">\(\sum \frac{1}{n^r}, r\in\mathbb{R}\)</span> para os valores possíveis de <span class="arithmatex">\(r\)</span>.</p>
+<p><strong>Prova:</strong>
+1. <span class="arithmatex">\(r&lt;1\)</span>, nesse caso <span class="arithmatex">\(n^r&lt;n \Rightarrow \frac{1}{n^r}&gt;\frac{1}{n}\)</span>, mas <span class="arithmatex">\(\sum \frac{1}{n} = +\infty\)</span> então pelo [[Teorema do critério da comparação]] a série diverge.
+2. <span class="arithmatex">\(r&gt;1\)</span>, nesse caso, <span class="arithmatex">\((s_n)\)</span> é crescente, logo <span class="arithmatex">\(s_n\)</span> converge <span class="arithmatex">\(\iff \ \exists (s_{n_k})_k\)</span> convergente. Vamos escolher <span class="arithmatex">\(n_k = 2^k-1\)</span>, ou seja <span class="arithmatex">\(s_{2^k-1} = 1+ \left(\frac{1}{2^r} + \frac{1}{3^r}\right) + \left(\frac{1}{4^r} + \frac{1}{5^r} + \frac{1}{6^r} + \frac{1}{7^r}\right) + \dots + \left(\frac{1}{(2^{k-1})^r} + \dots + \frac{1}{(2^k - 1)^r} \right) \leq 1+\frac{1}{2^{r-1}} + ... + \frac{1}{(2^{r-1})^{k-1}}\)</span> como <span class="arithmatex">\(0 &lt; a = \frac{1}{2^{r-1}} &lt; 1\)</span> pois <span class="arithmatex">\(r&gt;1\)</span> então existe <span class="arithmatex">\(M&gt;0\)</span> tal que <span class="arithmatex">\(s_{{2^k} - 1} \leq M\)</span> pois ela é uma versão da série geométrica. Logo <span class="arithmatex">\((s_n)\)</span> converge quando <span class="arithmatex">\(r&gt;1\)</span>. 
+3. <span class="arithmatex">\(r=0\)</span>, então <span class="arithmatex">\(\sum \frac{1}{n^r} = \sum 1\)</span> que sabemos que diverge.</p>
+<p><strong>OBS:</strong>
+Essa série é conhecida como <em>Zeta de Riemann</em> e é muito estudada atualmente, e pode ser utilizada para encontrar a convergência de outras séries a partir do [[Teorema do critério da comparação]].</p>
+<hr />
 
 
 
