@@ -1327,16 +1327,20 @@ Basta escrever os reais em <span class="arithmatex">\([0,1]\)</span> como <span 
 <h3 id="exemplo-8">Exemplo 8:</h3>
 <p>Demonstração de [[Corpo ordenado#Propriedades]] <strong>O2</strong>.</p>
 <p><strong>Prova:</strong>
-Sejam <span class="arithmatex">\(x,y \in \mathbb{K}\)</span>, consideramos <span class="arithmatex">\(z = y-x\)</span>.
-1. <span class="arithmatex">\(z \in \mathbb{K}^+\iff x&lt;y\)</span>
-2. <span class="arithmatex">\(z = 0 \Rightarrow x = y\)</span>
-3. <span class="arithmatex">\(-z \in \mathbb{K}^+ \Rightarrow x-y \in \mathbb{K}^+ \iff x&gt;y\)</span> </p>
+Sejam <span class="arithmatex">\(x,y \in \mathbb{K}\)</span>, consideramos <span class="arithmatex">\(z = y-x\)</span>.</p>
+<ol>
+<li><span class="arithmatex">\(z \in \mathbb{K}^+\iff x&lt;y\)</span></li>
+<li><span class="arithmatex">\(z = 0 \Rightarrow x = y\)</span></li>
+<li><span class="arithmatex">\(-z \in \mathbb{K}^+ \Rightarrow x-y \in \mathbb{K}^+ \iff x&gt;y\)</span> </li>
+</ol>
 <hr />
 <h3 id="exemplo-9">Exemplo 9:</h3>
-<p>Seja <span class="arithmatex">\(X \subseteq \mathbb{K}\)</span> onde <span class="arithmatex">\(\mathbb{K}\)</span> é um [[Corpo ordenado]] definido como <span class="arithmatex">\(X = \{r \in \mathbb{Q}, r&gt;0 \ | \ r^2 &lt;2\}\)</span>.
-1. 0 é [[Cota inferior]]
-2. 1000 é [[Cota superior]]
-3. <span class="arithmatex">\(X\)</span> é limitado.</p>
+<p>Seja <span class="arithmatex">\(X \subseteq \mathbb{K}\)</span> onde <span class="arithmatex">\(\mathbb{K}\)</span> é um [[Corpo ordenado]] definido como <span class="arithmatex">\(X = \{r \in \mathbb{Q}, r&gt;0 \ | \ r^2 &lt;2\}\)</span>.</p>
+<ol>
+<li>0 é [[Cota inferior]]</li>
+<li>1000 é [[Cota superior]]</li>
+<li><span class="arithmatex">\(X\)</span> é limitado.</li>
+</ol>
 <hr />
 <h3 id="exemplo-10">Exemplo 10:</h3>
 <p>Seja <span class="arithmatex">\(x_n&gt;0\)</span> uma [[Sequência]] onde <span class="arithmatex">\(\frac{x_{n+1}}{x_n}\to a&lt;1\)</span>. Mostre que <span class="arithmatex">\(x_n \to 0\)</span>.</p>
@@ -1379,10 +1383,12 @@ Note que não podemos usar o fato de que o limite interno é 1 pois isso implica
 <hr />
 <h3 id="exemplo-16">Exemplo 16:</h3>
 <p>Mostre a convergência de <span class="arithmatex">\(\sum \frac{1}{n^r}, r\in\mathbb{R}\)</span> para os valores possíveis de <span class="arithmatex">\(r\)</span>.</p>
-<p><strong>Prova:</strong>
-1. <span class="arithmatex">\(r&lt;1\)</span>, nesse caso <span class="arithmatex">\(n^r&lt;n \Rightarrow \frac{1}{n^r}&gt;\frac{1}{n}\)</span>, mas <span class="arithmatex">\(\sum \frac{1}{n} = +\infty\)</span> então pelo [[Teorema do critério da comparação]] a série diverge.
-2. <span class="arithmatex">\(r&gt;1\)</span>, nesse caso, <span class="arithmatex">\((s_n)\)</span> é crescente, logo <span class="arithmatex">\(s_n\)</span> converge <span class="arithmatex">\(\iff \ \exists (s_{n_k})_k\)</span> convergente. Vamos escolher <span class="arithmatex">\(n_k = 2^k-1\)</span>, ou seja <span class="arithmatex">\(s_{2^k-1} = 1+ \left(\frac{1}{2^r} + \frac{1}{3^r}\right) + \left(\frac{1}{4^r} + \frac{1}{5^r} + \frac{1}{6^r} + \frac{1}{7^r}\right) + \dots + \left(\frac{1}{(2^{k-1})^r} + \dots + \frac{1}{(2^k - 1)^r} \right) \leq 1+\frac{1}{2^{r-1}} + ... + \frac{1}{(2^{r-1})^{k-1}}\)</span> como <span class="arithmatex">\(0 &lt; a = \frac{1}{2^{r-1}} &lt; 1\)</span> pois <span class="arithmatex">\(r&gt;1\)</span> então existe <span class="arithmatex">\(M&gt;0\)</span> tal que <span class="arithmatex">\(s_{{2^k} - 1} \leq M\)</span> pois ela é uma versão da série geométrica. Logo <span class="arithmatex">\((s_n)\)</span> converge quando <span class="arithmatex">\(r&gt;1\)</span>. 
-3. <span class="arithmatex">\(r=0\)</span>, então <span class="arithmatex">\(\sum \frac{1}{n^r} = \sum 1\)</span> que sabemos que diverge.</p>
+<p><strong>Prova:</strong></p>
+<ol>
+<li><span class="arithmatex">\(r&lt;1\)</span>, nesse caso <span class="arithmatex">\(n^r&lt;n \Rightarrow \frac{1}{n^r}&gt;\frac{1}{n}\)</span>, mas <span class="arithmatex">\(\sum \frac{1}{n} = +\infty\)</span> então pelo [[Teorema do critério da comparação]] a série diverge.</li>
+<li><span class="arithmatex">\(r&gt;1\)</span>, nesse caso, <span class="arithmatex">\((s_n)\)</span> é crescente, logo <span class="arithmatex">\(s_n\)</span> converge <span class="arithmatex">\(\iff \ \exists (s_{n_k})_k\)</span> convergente. Vamos escolher <span class="arithmatex">\(n_k = 2^k-1\)</span>, ou seja <span class="arithmatex">\(s_{2^k-1} = 1+ \left(\frac{1}{2^r} + \frac{1}{3^r}\right) + \left(\frac{1}{4^r} + \frac{1}{5^r} + \frac{1}{6^r} + \frac{1}{7^r}\right) + \dots + \left(\frac{1}{(2^{k-1})^r} + \dots + \frac{1}{(2^k - 1)^r} \right) \leq 1+\frac{1}{2^{r-1}} + ... + \frac{1}{(2^{r-1})^{k-1}}\)</span> como <span class="arithmatex">\(0 &lt; a = \frac{1}{2^{r-1}} &lt; 1\)</span> pois <span class="arithmatex">\(r&gt;1\)</span> então existe <span class="arithmatex">\(M&gt;0\)</span> tal que <span class="arithmatex">\(s_{{2^k} - 1} \leq M\)</span> pois ela é uma versão da série geométrica. Logo <span class="arithmatex">\((s_n)\)</span> converge quando <span class="arithmatex">\(r&gt;1\)</span>. </li>
+<li><span class="arithmatex">\(r=0\)</span>, então <span class="arithmatex">\(\sum \frac{1}{n^r} = \sum 1\)</span> que sabemos que diverge.</li>
+</ol>
 <p><strong>OBS:</strong>
 Essa série é conhecida como <em>Zeta de Riemann</em> e é muito estudada atualmente, e pode ser utilizada para encontrar a convergência de outras séries a partir do [[Teorema do critério da comparação]].</p>
 <hr />
