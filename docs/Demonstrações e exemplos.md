@@ -55,6 +55,7 @@ Demonstração de [[Corpo ordenado#Propriedades]] **O2**.
 
 **Prova:**
 Sejam $x,y \in \mathbb{K}$, consideramos $z = y-x$.
+
 1. $z \in \mathbb{K}^+\iff x<y$
 2. $z = 0 \Rightarrow x = y$
 3. $-z \in \mathbb{K}^+ \Rightarrow x-y \in \mathbb{K}^+ \iff x>y$ 
@@ -62,6 +63,7 @@ Sejam $x,y \in \mathbb{K}$, consideramos $z = y-x$.
 ---
 ### Exemplo 9:
 Seja $X \subseteq \mathbb{K}$ onde $\mathbb{K}$ é um [[Corpo ordenado]] definido como $X = \{r \in \mathbb{Q}, r>0 \ | \ r^2 <2\}$.
+
 1. 0 é [[Cota inferior]]
 2. 1000 é [[Cota superior]]
 3. $X$ é limitado.
@@ -115,6 +117,7 @@ Mostre que $a_n = (1+\frac{1}{n})^n \to e$.
 Vamos mostrar que $a_n$ é crescente. Pela expansão do binômio de $a_n$ temos que $a_n = 1+1+\frac{n(n+1)}{2!}\frac{1}{n^2} + ... + \frac{n!}{n!}\frac{1}{n^2} = 1+1+...+\frac{1}{n!}(1-\frac{1}{n})(1-\frac{2}{n})...\frac{2}{n}\frac{1}{n}$ e analisando essa estrutura percebemos que $a_n < a_{n+1}$
 Seja $x_n$ a sequência do [[Demonstrações e exemplos#Exemplo 14]], sabemos que $a_n \leq x_n \ \forall n \in\mathbb{N}$ e portanto sabemos que $a_n \to l$ para algum valor de $l$.
 Por fim temos que se $k$ é fixo e $n\geq k \Rightarrow a_n \geq 1+1+...+\frac{1}{k!}(1-\frac{1}{k})(1-\frac{2}{k})...(1-\frac{k-1}{n})$ então $lim \ a_n = l\geq 1+1+\frac{1}{2!}+...+\frac{1}{k!} = x_k$ (limite do lado direito da desigualdade) mas então como $a_n\leq x_n < e$ temos que $l\leq e$ e $e\leq l \Rightarrow l=e$.
+
 **OBS:**
 Note que não podemos usar o fato de que o limite interno é 1 pois isso implicaria que $x_n \to 1 \neq e$.
 
@@ -123,6 +126,7 @@ Note que não podemos usar o fato de que o limite interno é 1 pois isso implica
 Mostre a convergência de $\sum \frac{1}{n^r}, r\in\mathbb{R}$ para os valores possíveis de $r$.
 
 **Prova:**
+
 1. $r<1$, nesse caso $n^r<n \Rightarrow \frac{1}{n^r}>\frac{1}{n}$, mas $\sum \frac{1}{n} = +\infty$ então pelo [[Teorema do critério da comparação]] a série diverge.
 2. $r>1$, nesse caso, $(s_n)$ é crescente, logo $s_n$ converge $\iff \ \exists (s_{n_k})_k$ convergente. Vamos escolher $n_k = 2^k-1$, ou seja $s_{2^k-1} = 1+ \left(\frac{1}{2^r} + \frac{1}{3^r}\right) + \left(\frac{1}{4^r} + \frac{1}{5^r} + \frac{1}{6^r} + \frac{1}{7^r}\right) + \dots + \left(\frac{1}{(2^{k-1})^r} + \dots + \frac{1}{(2^k - 1)^r} \right) \leq 1+\frac{1}{2^{r-1}} + ... + \frac{1}{(2^{r-1})^{k-1}}$ como $0 < a = \frac{1}{2^{r-1}} < 1$ pois $r>1$ então existe $M>0$ tal que $s_{{2^k} - 1} \leq M$ pois ela é uma versão da série geométrica. Logo $(s_n)$ converge quando $r>1$. 
 3. $r=0$, então $\sum \frac{1}{n^r} = \sum 1$ que sabemos que diverge.

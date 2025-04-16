@@ -45,6 +45,9 @@ Abaixo estão os tópicos das minhas notas organizadas por capítulo do livro **
 - Série numérica
 - Teorema do critério da comparação
 - Teorema de Seibniz
+- Série absolutamente convergente
+- Teorema de d'Alembert
+- Teorema de Cauchy
 
 ### **Demonstrações e exemplos**
 A nota *Demonstrações e exemplos* contém exemplos e exercícios feitos durante a aula com relação à diversos tópicos já abordados nas notas.
