@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../Aberto/">
+        <link rel="prev" href="../Teorema%20do%20sandu%C3%ADche/">
       
       
-        <link rel="next" href="../Compacto/">
+        <link rel="next" href="../Teorema%20dos%20intervalos%20encaixados/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Adição e multiplicação - Notas de Análise - 2025/1</title>
+        <title>Teorema dos intervalos encaixados para conjuntos - Notas de Análise - 2025/1</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adicao" class="md-skip">
+        <a href="#demonstracao" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Adição e multiplicação
+              Teorema dos intervalos encaixados para conjuntos
             
           </span>
         </div>
@@ -230,29 +230,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Adição e multiplicação
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Adi%C3%A7%C3%A3o%20e%20multiplica%C3%A7%C3%A3o/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -262,42 +243,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#adicao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Adição:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multiplicacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Multiplicação:
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1167,10 +1112,29 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Teorema%20dos%20intervalos%20encaixados%20para%20conjuntos/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Teorema dos intervalos encaixados para conjuntos
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1180,6 +1144,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#demonstracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demonstração:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1272,18 +1263,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#adicao" class="md-nav__link">
+  <a href="#demonstracao" class="md-nav__link">
     <span class="md-ellipsis">
-      Adição:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multiplicacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Multiplicação:
+      Demonstração:
     </span>
   </a>
   
@@ -1305,24 +1287,15 @@
 
 
 
-  <h1>Adição e multiplicação</h1>
+  <h1>Teorema dos intervalos encaixados para conjuntos</h1>
 
-<p>No [[Conjunto dos números naturais]] as operações de soma e multiplicação são definidas como:</p>
-<h3 id="adicao">Adição:</h3>
-<div class="arithmatex">\[
-n+1 = s(n)
-\]</div>
-<div class="arithmatex">\[
-n+s(m) = s(n+m)
-\]</div>
-<h3 id="multiplicacao">Multiplicação:</h3>
-<p>$$
-n \cdot 1 = n
-$$
-$$
-n \cdot s(m) = n\cdot m + m
-$$
-Valem as propriedades comutativa, associativa e distributiva da soma e do produto.</p>
+<p>Seja <span class="arithmatex">\((X_n)\)</span> sequência decrescente de [[Compacto]] não vazios ou seja: <span class="arithmatex">\(X_1 \supset X_2 \supset ...\)</span> então <span class="arithmatex">\(\bigcap X_n \neq \emptyset\)</span> .</p>
+<h3 id="demonstracao">Demonstração:</h3>
+<p>Para cada <span class="arithmatex">\(n \in \mathbb{N}\)</span> denotamos <span class="arithmatex">\(\alpha_n = min \ X_n\)</span> e <span class="arithmatex">\(\beta_n = max \ X_n\)</span>. Sabemos que existe <span class="arithmatex">\(\alpha = lim \  \alpha_n = sup \ \alpha_n\)</span>.</p>
+<ol>
+<li><span class="arithmatex">\(\alpha_n \in X_1, \ \forall n \in \mathbb{N} \Rightarrow \alpha\in X_1\)</span> </li>
+<li><span class="arithmatex">\(k \in \mathbb{N}, \alpha_n \in X_k, \ \forall n \geq k \Rightarrow \alpha \in X_k\)</span> </li>
+</ol>
 
 
 
