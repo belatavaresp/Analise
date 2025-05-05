@@ -48,6 +48,18 @@ Abaixo estão os tópicos das minhas notas organizadas por capítulo do livro **
 - Série absolutamente convergente
 - Teorema de d'Alembert
 - Teorema de Cauchy
+- Comutatividade
+- Teorema da Riemann
+
+### **Topologia na reta**
+- Interior
+- Aberto
+- Fecho
+- Fechado
+- Ponto de acumulação
+- Ponto isolado
+- Teorema de Bolzano-Weierstrass para conjuntos
+- Compacto
 
 ### **Demonstrações e exemplos**
 A nota *Demonstrações e exemplos* contém exemplos e exercícios feitos durante a aula com relação à diversos tópicos já abordados nas notas.
