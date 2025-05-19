@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../Teorema%20do%20sandu%C3%ADche/">
+        <link rel="prev" href="../Comutatividade/">
       
       
-        <link rel="next" href="../Teorema%20dos%20intervalos%20encaixados/">
+        <link rel="next" href="../Conjunto%20dos%20n%C3%BAmeros%20naturais/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Teorema dos intervalos encaixados para conjuntos - Notas de Análise - 2025/1</title>
+        <title>Conjunto de Cantor - Notas de Análise - 2025/1</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#demonstracao" class="md-skip">
+        <a href="#definicao" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Teorema dos intervalos encaixados para conjuntos
+              Conjunto de Cantor
             
           </span>
         </div>
@@ -293,10 +293,29 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Conjunto%20de%20Cantor/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Conjunto de Cantor
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -306,6 +325,42 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definição:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propriedades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propriedades:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1175,29 +1230,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Teorema dos intervalos encaixados para conjuntos
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Teorema%20dos%20intervalos%20encaixados%20para%20conjuntos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1207,33 +1243,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#demonstracao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Demonstração:
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1326,9 +1335,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#demonstracao" class="md-nav__link">
+  <a href="#definicao" class="md-nav__link">
     <span class="md-ellipsis">
-      Demonstração:
+      Definição:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propriedades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propriedades:
     </span>
   </a>
   
@@ -1350,15 +1368,57 @@
 
 
 
-  <h1>Teorema dos intervalos encaixados para conjuntos</h1>
+  <h1>Conjunto de Cantor</h1>
 
-<p>Seja <span class="arithmatex">\((X_n)\)</span> sequência decrescente de [[Compacto]] não vazios ou seja: <span class="arithmatex">\(X_1 \supset X_2 \supset ...\)</span> então <span class="arithmatex">\(\bigcap X_n \neq \emptyset\)</span> .</p>
-<h3 id="demonstracao">Demonstração:</h3>
-<p>Para cada <span class="arithmatex">\(n \in \mathbb{N}\)</span> denotamos <span class="arithmatex">\(\alpha_n = min \ X_n\)</span> e <span class="arithmatex">\(\beta_n = max \ X_n\)</span>. Sabemos que existe <span class="arithmatex">\(\alpha = lim \  \alpha_n = sup \ \alpha_n\)</span>.</p>
-<ol>
-<li><span class="arithmatex">\(\alpha_n \in X_1, \ \forall n \in \mathbb{N} \Rightarrow \alpha\in X_1\)</span> </li>
-<li><span class="arithmatex">\(k \in \mathbb{N}, \alpha_n \in X_k, \ \forall n \geq k \Rightarrow \alpha \in X_k\)</span> </li>
-</ol>
+<h3 id="definicao">Definição:</h3>
+<p>https://pt.wikipedia.org/wiki/Conjunto_de_Cantor</p>
+<h3 id="propriedades">Propriedades:</h3>
+<ul>
+<li>Cada <span class="arithmatex">\(C_n\)</span> é [[Compacto]]</li>
+<li>Cada <span class="arithmatex">\(C_{n,k}\)</span> é [[Enumerável]]</li>
+<li>A interseção dos <span class="arithmatex">\(C_n \neq \emptyset\)</span> pelo [[Teorema dos intervalos encaixados para conjuntos]]</li>
+<li>O conjunto da interseção dos <span class="arithmatex">\(C_n\)</span> é [[Fechado]]</li>
+<li>
+<p>O conjunto da interseção dos <span class="arithmatex">\(C_n\)</span> é [[Compacto]]</p>
+</li>
+<li>
+<p>O conjunto da interseção dos <span class="arithmatex">\(C_n\)</span> (<span class="arithmatex">\(C\)</span>) não contém [[Intervalo]], ou seja seu [[Interior]] é vazio
+    <strong>Prova:</strong>
+    Seja <span class="arithmatex">\(I\subset \mathbb{R}\)</span> intervalo e seja <span class="arithmatex">\(n \in \mathbb{N}\)</span> tal que <span class="arithmatex">\(\frac{1}{3^n} &lt; comp(I)\)</span>. Então <span class="arithmatex">\(comp(C_{n,k}\cap I) &lt; \frac{1}{3^n} &lt; comp(I)\)</span>. Então <span class="arithmatex">\(I\not \subset C_{n,k},\)</span> para todo <span class="arithmatex">\(k \in \{1,...,2^n\} \Rightarrow I\not \subset C_n \Rightarrow I \not \subset C\)</span>.</p>
+</li>
+<li>
+<p>Todos os pontos de <span class="arithmatex">\(C\)</span> são [[Ponto de acumulação]], ou seja <span class="arithmatex">\(C = C'\)</span>
+    <strong>Prova:</strong>
+    <span class="arithmatex">\(x \in C\)</span>, para todo <span class="arithmatex">\(n \in \mathbb{N}\)</span> existe <span class="arithmatex">\(C_{n,k}\)</span> tal que <span class="arithmatex">\(x \in C_{n,k} = [a_n,b_n]\)</span>. Definimos 
+    <span class="arithmatex">\(x_n = \begin{cases} a_n, &amp; \text{se } x\neq a_n \\ b_n, &amp; \text{se } x=a_n \end{cases}\)</span>
+    Então <span class="arithmatex">\(|x_n-x| \leq \frac{1}{3^n} \Rightarrow x_n \to x \Rightarrow x \in C'\)</span> </p>
+</li>
+<li>
+<p><span class="arithmatex">\(C\)</span> não é [[Enumerável]]
+    <strong>Prova:</strong>
+    Suponhamos <span class="arithmatex">\(C\)</span> enumerável. Então <span class="arithmatex">\(C = \{x_n | n \in \mathbb{N}\}\)</span>. Vamos encontrar <span class="arithmatex">\(c \in C:  c \notin \{x_n| n \in \mathbb{N}\}\)</span>.</p>
+<p>Passo 1: Existe <span class="arithmatex">\(I_1:\)</span> intervalo fechado tal que:
+1. <span class="arithmatex">\(x_1 \notin I_1\)</span>
+2. <span class="arithmatex">\(I_1 \cap C\)</span> é infinito
+3. <span class="arithmatex">\(comp(I_1)&lt;1\)</span></p>
+<p>Passo 2: Existe <span class="arithmatex">\(I_2:\)</span> intervalo fechado tal que:
+4. <span class="arithmatex">\(x_2 \notin I_2\)</span>
+5. <span class="arithmatex">\(I_2 \cap C\)</span> é infinito
+6. <span class="arithmatex">\(comp(I_2)&lt;\frac{1}{2}\)</span>
+7. <span class="arithmatex">\(I_2 \subset I_1\)</span> </p>
+<p>Passo n: Existe <span class="arithmatex">\(I_n\)</span> intervalo fechado tal que:
+8. <span class="arithmatex">\(x_n \notin I_n\)</span>
+9. <span class="arithmatex">\(I_n \cap C\)</span> é infinito
+10. <span class="arithmatex">\(comp(I_n)&lt;\frac{1}{n}\)</span>
+11. <span class="arithmatex">\(I_n \subset I_{n-1}\)</span> </p>
+<p>Logo pelo [[Teorema dos intervalos encaixados para conjuntos]] existe <span class="arithmatex">\(c\)</span> na interseção de todos <span class="arithmatex">\(I_n\)</span> e <span class="arithmatex">\(c \neq x_n \ \forall n \in \mathbb{N}\)</span> e <span class="arithmatex">\(a_n \in I_n \cap C\)</span> ou seja <span class="arithmatex">\(c \in C' \Rightarrow c \in C\)</span>.</p>
+</li>
+<li>
+<p>A "medida" de <span class="arithmatex">\(C\)</span> é zero
+    <span class="arithmatex">\(\frac{1}{3}+\frac{2}{9}+...=\sum_{n=0} \frac{2^{n}}{3^{n+1}} =  \frac{1}{3}\cdot \frac{1}{1-\frac{2}{3}} = 1\)</span>
+    Logo <span class="arithmatex">\(med(C) = 0\)</span> (o comprimento do intervalo <span class="arithmatex">\([0,1]-comp(C)\)</span>)</p>
+</li>
+</ul>
 
 
 
